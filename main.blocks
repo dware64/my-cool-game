@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="@IZXSNQTI;tdvp|k_K^H">Player</variable><variable type="KIND_SpriteKind" id="{CDtgRAAzm(q?g^/4erH">Projectile</variable><variable type="KIND_SpriteKind" id="K0GmI_S@PpWrrxNJ3.8:">Food</variable><variable type="KIND_SpriteKind" id="k./L.Br0wiWVWAF})xoC">Enemy</variable><variable id="M|9=j7o^+3ni%:#[Hc3{">WareBot</variable><variable id="{24PXkTqqDe/BovN=z+c">mySprite</variable></variables><block type="pxt-on-start" id="bpOvN6XkV+R.VOUy.ZM4" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="ctOj]f[N7cjsEucY$h:0"><field name="VAR" id="M|9=j7o^+3ni%:#[Hc3{">WareBot</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="FelzjkTgKu}@_h5%R`m]"><value name="img"><shadow type="screen_image_picker" id="O63p32_hUd47jdZ6FU{j"><field name="img">img`
+. . . . . . . . . . . . 
+. . e e e e e e e e . . 
+. . e e e e e e e e . . 
+. . e e e e e e e e . . 
+. . e e e e e e e e . . 
+. . e e e e e e e e . . 
+. e e e e e e e e e e . 
+. e e f f e e f f e e . 
+. e e e e e e e e e e . 
+. . e e f 1 1 f e e . . 
+. . . . f f f f . . . . 
+e e 8 8 8 8 8 8 8 8 e e 
+. . . 8 8 8 8 8 8 . . . 
+. . . 2 2 2 2 2 2 . . . 
+. . . f f f f f f . . . 
+. . . f f . . f f . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"O63p32_hUd47jdZ6FU{j"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="^o;,NXa=0w}zQ+5~J+GG"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="gamesetbackgroundcolor" id="MM_BBd-en$O56xS_(^s."><value name="color"><shadow type="colorindexpicker" id="%J^z#R)3H*V}{ltt7,Nv"><field name="index">5</field></shadow></value><next><block type="game_control_sprite" id="e[,X*tF=092S6|:n]-}D"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id=";5wAI/cAZ)7|Z@-+04Xr"><field name="VAR" id="M|9=j7o^+3ni%:#[Hc3{">WareBot</field></block></value></block></next></block></next></block></statement></block></xml>
