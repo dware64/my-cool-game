@@ -1,3 +1,9 @@
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    info.changeScoreBy(1)
+    otherSprite.destroy(effects.fire, 100)
+    music.baDing.play()
+})
+let projectile: Sprite = null
 let WareBot = sprites.create(img`
     . . . . . . . . . . . . 
     . . e e e e e e e e . . 
@@ -18,3 +24,27 @@ let WareBot = sprites.create(img`
     `, SpriteKind.Player)
 scene.setBackgroundColor(5)
 controller.moveSprite(WareBot)
+WareBot.setStayInScreen(true)
+info.setScore(0)
+info.startCountdown(50)
+game.onUpdateInterval(500, function () {
+    projectile = sprites.createProjectileFromSide(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . 4 4 . . . . . . . 
+        . . . . . . 4 5 5 4 . . . . . . 
+        . . . . . . 2 5 5 2 . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, 50, 0)
+    projectile.setPosition(0, randint(0, 120))
+})
